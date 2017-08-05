@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+         var arr = new Array();
+         var are = [1,null,undefined,"ddd",new Date()];
+//         alert(are);
+         document.write(are+"<br>");
+         var ax = [2,"ee"];
+         var result = ax.push(2,3,true);
+         document.write(result+"<br>");
+         var arrs = [1,2,3,4,5,4,3,2,1];
+         var index = arrs.indexOf(4,4);
+         //alert(index+"<br>");
+         //every     &&
+         var result = arrs.every(function (item ,index,array) {
+           return item>2;
+         });
+         document.write(result+"<br>");
+         //filter   过滤 放回结果
+         var result = arrs.filter(function (item ,index,array) {
+              return item>1;
+         });
+         document.write(result+"<br>");
+         //forEach 循环数组每一项的值
+        arrs.forEach(function (t, number, ts) {
+             document.write(t);
+        }); document.write("<br>");
+        //map
+         result = arrs.map(function (t, number, ts) {
+             return t*2;
+         });
+         document.write(result+"<br>");
+        //some        ||      与every相反
+
+        //reduce
+        result = arrs.reduce(function (p1, p2, number, ts) {
+            return p1+p2;
+        });
+        document.write(result+"<br>");
+        //reduceRight
+         result = arrs.reduceRight(function (p1, p2, number, ts) {
+             return p1+p2;
+         });
+         document.write(result+"<br>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

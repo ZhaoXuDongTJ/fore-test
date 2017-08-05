@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var name = "xiao A";
+        var obj = {
+            name:"xiao B ",
+            getName:function () {
+                return function () {
+                    return this.name;
+                }
+            }
+        }
+
+        document.write(
+            obj.getName()()
+        );
+
+        var obj1 = {
+            name:"xiao C",
+            getName:function () {
+                 var o =this;
+                 return function () {
+                     return o.name;
+                 }
+            }
+        }
+
+        document.write(
+            obj1.getName()()
+        );
+    </script>
+</head>
+<body>
+
+</body>
+</html>

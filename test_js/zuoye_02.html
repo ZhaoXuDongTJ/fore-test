@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var obj = new Object();
+        var obj1 = {
+            name:"zhao",
+            age:1,
+            say:function () {
+               alert("sss");
+            }
+        };
+        for(var att in obj1){
+            document.write(att+" : "+obj1[att]+"<br>");
+        }
+        function Map() {
+            var obj = {};
+            this.put = function (key,value) {
+                 obj[key]=value;
+            }
+            this.size = function () {
+                var accout=0;
+                 for(var att in obj){
+                     accout++;
+                 }
+                 return accout;
+            }
+            this.get = function (key) {
+                if(obj[key]|| obj[key]===0 ||obj[key] ===false) {
+                    return obj[key];
+                }else{
+                    return null;
+                }
+            }
+            this.remove = function (key) {
+                if(obj[key]|| obj[key]===0 ||obj[key] ===false){
+                      delete obj[key];
+                }else {
+                       alert("Error");
+                }
+            }
+            //eachMap
+            this.eachMap = function () {
+                 for(var attr in obj){
+                     document.write(attr +" : "+obj[attr]+ "<br>");
+                 }
+            }
+        }
+        var a = new Map();
+        document.write(a.size());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

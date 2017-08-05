@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var k = 1;
+        function t1() {
+            var k = 2;
+//            function test() {
+//                return k;
+//            }
+//            var test = function () {
+//                return k;
+//            }
+            var test = Function("return k;");
+            document.write(test());
+        }
+       // t1();
+        function test(a,b,c,d) {
+            document.write(arguments.callee.length+"<br>"+test.length+"<br>"+arguments.length);
+
+            return a+b;
+        }
+        test(2,3,4);
+
+        document.write("<br>");
+
+        function fact(num) {
+            if(num<=1) return 1;
+            else return num*arguments.callee(num-1);
+        }
+        document.write(fact(5));
+
+        var k = 10;
+        function test() {
+            this.k = 20;
+        }
+        test();
+
+        function num(a,b) {
+            return a+b;
+        }
+        function call1(a,b) {
+            return num.call(this,a,b);
+        }
+        function apply1(a,b) {
+            return num.apply(this,[a,b]);
+        }
+
+        window.color = "red";
+        var obj = {color:"blue"};
+        function test() {
+            alert(this.color);
+        }
+        test.call(window);
+        test.call(this);
+        test.call(obj);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

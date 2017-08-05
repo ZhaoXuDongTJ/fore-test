@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+    width: 980px;
+    height: 800px;
+    background-color: aliceblue;
+    margin: auto;
+}
+#head{
+    width: 100%;
+    height: 15%;
+}
+#head p{
+    font-size:50px;
+    text-align: center;
+    font-family: "微软雅黑";
+    color: aqua;
+    border-radius: 20px;
+    border: 1px solid #009900;
+}
+.all-list{
+
+    cursor: pointer;
+}
+.all-list ul li{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #3e37af;
+    font-size:20px;
+    list-style: none;
+    margin-right:100px;
+    float: left;
+}
+
+#myd{
+    width: 100%;
+    height: 80%;
+    border: 1px solid rgba(83,64,25,0.8);
+}
+#pages{
+    width: 61.8%;
+    height: 90%;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #dddd00;
+    float: left;
+}
+
+#pages img{
+    width: 80%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+#proper{
+    width: 35%;
+    height: 90%;
+    margin: 10px auto;
+    border: 1px solid #000aaa;
+    border-radius: 10px;
+    float: right;
+}
+.all-person{
+    border-radius: 10px;
+    width: 90%;
+    height: 45%;
+    margin: 10px auto;
+    border: 1px solid #000000;
+    /*float: right;*/
+}
+
+
+
+#pointer{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid #3e37af;
+    border-radius: 13px;
+
+    text-align: center;
+}
+#pointer a{
+
+    text-decoration: none;
+}

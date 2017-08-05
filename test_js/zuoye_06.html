@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function test1(a,b) {
+            return a+b;
+        }
+        function Obj(x,y) {
+            this.x=x;
+            this.y=y;
+            return x*y;
+        }
+
+        var o = new Obj(10,20);
+        //call  内部简单的实现
+        o.method = test1;
+        alert(o.method(o.x,o.y));
+        delete o.method;
+        
+        alert(test1.call(o,o.x,o.y));
+
+    </script>
+    <style>
+        body{
+            background: #fff url() 0 0 no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距合并</title>
+    <!--块的顶部外边距和底部外边距有时被组合(折叠)为单个外边距，其大小是组合到其中的最大外边距-->
+    <style>
+        span{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            padding: 30px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<span class="box1">ss</span><span class="box2">sss</span><span class="box3">ssss</span><span class="box4">sssss</span>
+</body>
+</html>

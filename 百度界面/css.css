@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    text-align: center;
+}
+.header,.content,.footer{
+    align-items: center;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+ul{
+    left: 50%;
+}
+li{
+    margin: 10px;
+    float: left;
+}
+
+#text{
+    width: 50%;
+    height: 35px;
+
+
+}
+#submit{
+    background-color: blue;
+    height:40px;
+    width: 10%;
+    position: relative;
+    left: 0px;
+    top: 13px;
+}
+.main{
+    margin: auto;
+}

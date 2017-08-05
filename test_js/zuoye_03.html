@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //js 对象的特性 去掉重复的
+        var arr = [2,1,2,10,2,3,5,10,13,5,1];
+        function Arra() {
+             var sz = {};
+             this.inout = function (key) {
+                 for(var i = 0;i<key.length;i++){
+                     sz[key[i]] = 0;
+                 }
+              }
+             this.toArr = function () {
+                 var a = [];
+                   for(var attr in sz){
+                       a.push(attr);
+                   }
+                   return a;
+             }
+        }
+
+        var cesh = new Arra();
+         cesh.inout(arr);
+         var ces = cesh.toArr();
+         document.write(ces.toString());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
