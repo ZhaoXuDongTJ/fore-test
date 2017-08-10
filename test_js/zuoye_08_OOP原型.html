@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP2-原型</title>
+    <script>
+        function Person(name,age) {
+            this.name = name;
+            this.age = age;
+            this.show = show;
+        }
+        function show() {
+            document.write(this.name+" : "+this.age);
+        }
+        var p1 = new Person("ee",11);
+
+        document.write(p1.isPrototypeOf(Person.prototype)+"<br>");//false
+        document.write(Person.prototype.isPrototypeOf(p1));       //true
+
+        //得到原型；
+        var prototypeObj = Object.getPrototypeOf(p1);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

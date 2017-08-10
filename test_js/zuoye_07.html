@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP</title>
+    <script>
+        function Person(name,age) {
+            this.name = name;
+            this.age = age;
+            this.show = function () {
+                document.write("<br>"+this.name+" : "+this.age+"<br>");
+            }
+        }
+        var p1 = new Person("dsd",11);
+        document.write(p1.constructor+"<br>");
+        document.write(Person);
+       // document.write(p1 instanceof Person) ;
+        if(p1 instanceof Person){
+            document.write("OK");
+        }
+    //    Person("sdsd",22);
+//        这个全局定义了 name和age  window调用了；
+        var o = new Object();  //在对象另外一个作用域去调用
+        Person.call(o,"ww",15);
+        document.write("<br>"+o.name);
+
+
+//       prototype 原型
+    </script>
+</head>
+<body>
+
+</body>
+</html>

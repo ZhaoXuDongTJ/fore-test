@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=980">
+    <title>例子01</title>
+    <script src="Util.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="without">
+    <h3>Without dynamic resizing</h3>
+    <ul>
+        <h3>Heading 3</h3>
+        <h2>Heading 2</h2>
+        <h1>Heading 1</h1>
+    </ul>
+</div>
+<div id="content">
+    <h3>Without dynamic resizing</h3>
+    <ul>
+        <h3>Heading 3</h3>
+        <h2>Heading 2</h2>
+        <h1>Heading 1</h1>
+    </ul>
+</div>
+<script>
+    var e = document.getElementById('content').style;
+    e.background = '#ddd';
+    e.width = '960px';
+    FontSwitch();
+    e.fontSize = f;
+</script>
+</body>
+</html>

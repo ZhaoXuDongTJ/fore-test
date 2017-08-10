@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .dd{
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            overflow: hidden;
+        }
+        .boxs1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        .boxs2{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+        }
+
+        .box1 {
+            overflow: hidden;
+            *zoom:1;
+        }
+        .box2{
+            overflow: hidden;
+        }
+
+        .out{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            overflow: hidden;
+        }
+        .in{
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<!--示例-->
+<div class="dd">我是文字我是文字我是文字我是文字我是文字我是文字
+    我是文字我是文字我是文字我是文字我是文字</div>
+<!--方法4-->
+<div class="box1">
+    <div class="boxs1">DDDDDD</div>
+    <div class="boxs1">SSSSSS</div>
+    <div class="boxs1">AAAAAA</div>
+</div>
+<div class="box2">
+    <div class="boxs2">ZZZZZZ</div>
+    <div class="boxs2">ZZZZZZ</div>
+    <div class="boxs2">ZZZZZZ</div>
+</div>
+
+<div class="out">
+    <div class="in"></div>
+</div>
+</body>
+</html>

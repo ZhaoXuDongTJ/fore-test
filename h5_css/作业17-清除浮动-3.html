@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器清除浮动</title>
+    <style>
+         .boxs1{
+             width: 100px;
+             height: 100px;
+             background-color: red;
+             float: left;
+         }
+        .boxs2{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+        }
+        .box1::after{
+            content: "";
+            display: block;
+            height: 0px;
+            visibility: hidden;
+            clear: both;
+        }
+        .box1{
+            *zoom:1;
+            /*兼容IE6*/
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="boxs1">DDDDDD</div>
+    <div class="boxs1">SSSSSS</div>
+    <div class="boxs1">AAAAAA</div>
+</div>
+<div class="box2">
+    <div class="boxs2">ZZZZZZ</div>
+    <div class="boxs2">ZZZZZZ</div>
+    <div class="boxs2">ZZZZZZ</div>
+</div>
+</body>
+</html>
