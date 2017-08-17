@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All</title>
+
+</head>
+<body>
+<div class="out">
+    sss
+    <div class="in" id="xx">ddd</div>
+</div>
+<script>
+    var dom_all = document.getElementById("xx");
+    for (var i_n in dom_all){
+        document.write(i_n+":"+dom_all[i_n]+"<br>");
+        if(typeof dom_all[i_n] == 'function'){
+            document.write(i_n+":"+dom_all[i_n]()+"<br>");
+        }else {
+            document.write(i_n+":"+dom_all[i_n]+"<br>");
+        }
+    }
+</script>
+<br><br>
+<!--
+document.write()  只能在页面加载和重载页面时修改页面的内容；
+-->
+</body>
+</html>

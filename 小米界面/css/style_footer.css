@@ -1,0 +1,96 @@
+nav{
+    margin: 0 auto;
+}
+footer nav ul{
+    width: 1225px;
+    height: 80px;
+    border-bottom:1px solid #3c3c3c ;
+    /*与body的上边距*/
+    margin-top: 50px;
+}
+footer nav ul li{
+    width: 242px;
+    height: 24px;
+    border-left: 1px solid #3c3c3c;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+footer nav ul li a{
+    text-decoration: none;
+}
+
+footer div dl {
+    float: left;
+    margin-right: 100px;
+}
+#footer{
+    width: 1226px;
+    height: 1108px;
+    margin: 0 auto;
+    text-align: center;
+}
+.connect{
+    float: left;
+}
+#dl_dd_dt{
+    height: 144px;
+    border: 1px solid #000;
+}
+#dl_dd_dt dt{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+#dl_dd_dt dl dd {
+    font-size:15px;
+    color: #757575;
+    margin-bottom: 10px;    
+}
+.connect{
+    height: 144px;
+     border-left: 1px solid #3c3c3c;
+     padding-left: 100px;
+}
+.connect h3{
+    color: #ff6700;
+}
+.connect .connect_24{
+    margin: 0 auto;
+    padding: 1px;
+    width: 120px;
+    height: 30px;
+
+    border: 1px solid #ff6700;
+}
+.connect .connect_24 a{
+    color: #ff6700;
+    text-decoration: solid;
+    /*border: 1px solid #ff6700;*/
+}
+.connect .connect_24:hover{
+    background-color: #ff6700;
+    color: white;
+}
+
+/*第三部分*/
+.site{
+    border: 1px solid #000;
+}
+.container .logo_footer{
+    width: 57px;
+    height: 57px;
+    background: url("../images/logo-footer.png");
+}
+
+
+/*第四部分*/
+footer .explore{
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+
+
+

@@ -1,0 +1,35 @@
+#body2{
+    height: 170px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+#body2 .multi_function{
+    float: left;
+    width: 234px;
+    height: 170px;
+}
+#body2 .multi_function ul{
+     list-style: none;
+}
+#body2 .multi_function ul li{
+    width: 76px;
+    height: 82px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    float: left;
+}
+#body2 .multi_function ul li a{
+    text-decoration: none;
+}
+#body2 .advertisement img{
+    width: 316px;
+    height: 170px;
+
+}
+#body2 .advertisement{
+    float: left;
+    margin-left: 14px;
+}
+#body2{
+
+}

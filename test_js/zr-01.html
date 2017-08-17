@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showHello() {
+            for(var i=0;i<10;i++){
+                document.writeln((i+1)+"Hello World<br />");
+            }
+        }
+        function textUserName() {
+            //取值
+            var userName = document.getElementById("username").value;
+            //判断
+            if(userName == ""){
+                 document.getElementById("span1").innerHTML="请输入用户名";
+                document.getElementById("span1").style.color="red";
+            } else {
+                document.getElementById("span1").innerHTML ="";
+                document.getElementById("p1").innerHTML = userName;
+            }
+
+        }
+        function testPsw() {
+            var psw = document.getElementById("psw").value.trim();
+            var span2 = document.getElementById("span2");
+            if(psw.length<6){
+                span2.innerHTML = "密码不能小于六位";
+            }else {
+                span2.innerHTML = "密码正好";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="10 ci" onclick="showHello()">
+     用户名：<input type="text" name="username" id="username" onblur="textUserName()"> <span id="span1"></span>
+<p id="p1"></p>
+密码：<input type="password" name="psw" id="psw" onblur="testPsw()"> <span id="span2"></span>
+</body>
+</html>

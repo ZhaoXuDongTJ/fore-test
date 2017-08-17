@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onclick</title>
+    <style>
+        div{
+            height: 100px;
+            background-color: #000aaa;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    I am div1.It seems like a nice place.
+</div>
+<div id="div2">
+    I am div2.It`s a little fancier here.
+</div>
+<script>
+    var d1 = document.getElementById("div1");
+    var d2 = document.getElementById("div2");
+    d1.onclick = function () {
+        d1.style.backgroundColor = "#ddd";
+    }
+</script>
+</body>
+</html>

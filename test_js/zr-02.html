@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkAll() {
+            // 获取全选款 是否选中状态
+            var checkFlag = document.getElementById("checkAll").checked;
+            //判断 如果选中 所有的子选项 选中
+            if(checkFlag){
+                //获取子选择 给出选中状态
+                for(var i=0;i<document.getElementsByName("instr").length;i++){
+                    document.getElementsByName("instr")[i].checked =true;
+                }
+            } else {
+                for(var i=0;i<document.getElementsByName("instr").length;i++){
+                    document.getElementsByName("instr")[i].checked =false;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="checkbox" id="checkAll" name="checkAll" value="全选/全不选" onclick="checkAll()">
+<br>
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+<input type="checkbox" name="instr">
+</body>
+</html>

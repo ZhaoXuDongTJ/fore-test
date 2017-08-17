@@ -4,5 +4,4 @@ for(var prop_name in navigator){
     }else {
         document.write(prop_name+": "+navigator[prop_name]+"<br>");
     }
-
 }

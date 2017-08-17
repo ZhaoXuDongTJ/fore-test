@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 700px;
+            height: 400px;
+            background-color: #eeeeee;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .main .side2,.main .side1{
+            width: 40px;
+            height: 80px;
+            font-size: 50px;
+            line-height: 80px;
+            color: #eeeeee;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .main .side1{
+            position: absolute;
+            left: 0px;
+            top:50%;
+            margin-top:-40px;
+        }
+        .main .side2{
+            position: absolute;
+            right: 0px;
+            top:50%;
+            margin-top:-40px;
+        }
+        .main .num div{
+            width: 30px;
+            height: 30px;
+            background-color: #ff5fae;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            box-sizing: border-box;
+            border: 1px solid rgba(150,140,130,0.8);
+        }
+        .main .num {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <span class="side1">&lt;</span><span class="side2">&gt;</span>
+    <div class="num">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </div>
+</div>
+</body>
+</html>

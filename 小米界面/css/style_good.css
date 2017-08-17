@@ -1,0 +1,17 @@
+#good{
+    height: 438px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+#good .container .nav_item img{
+    width: 160px;
+    height: 160px;
+}
+#good .container .nav_item{
+    width: 230px;
+    height: 340px;
+    float: left;
+    text-align: center;
+    margin-right: 14px;
+    background-color: #fafafa;
+}

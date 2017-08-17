@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom属性</title>
+
+</head>
+<body>
+<nav id="sitelinks">
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+</nav>
+<hr>
+<form id="newp" onsubmit="newpage();">
+    Name:<input type="text" id="yourname" size="25">
+    <input type="submit" value="Submit">
+</form>
+<script>
+    document.cookie = "site = homepage";
+    document.writeln(document.cookie+"<br>");
+    document.dir = "ltr";// ltr左到右  rtl右到左
+    document.writeln(document.lastModified+"<br>");
+    document.writeln("You came from" + document.referrer+ "!<br>"
+        + document.title+"<br>"+"URL:"+document.URL+"<br>"+"");
+    var nav_element = document.getElementById("sitelinks");
+    var nav_links = nav_element.getElementsByTagName("a");
+    document.writeln(nav_links.length);
+    function newpage() {
+        var thename = document.getElementById("yourname").value;
+        document.open();   //打开一个新文档；
+        document.writeln("<h1>Welcome</h1>");
+        document.writeln("Hello!"+thename+", and Welcome to my page");
+        document.close();
+    }
+</script>
+</body>
+</html>

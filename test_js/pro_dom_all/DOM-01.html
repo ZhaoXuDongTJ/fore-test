@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>creatElement()creatTextNode()appendChild()</title>
+
+</head>
+<body>
+<div id="div1" title="All about me">
+    This page is about me!
+</div>
+<script>
+    var me_div = document.getElementById("div1");
+    var inner_div = document.createElement("div");
+    var inner_div_text = document.createTextNode("More about me");
+
+    inner_div.appendChild(inner_div_text);
+    inner_div.title="More";
+    me_div.appendChild(inner_div);
+
+    me_div.removeChild(inner_div); 
+</script>
+</body>
+</html>

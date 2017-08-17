@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="div1">
+    What is 2+2 ?
+</div>
+<div id="div2">
+    <a href="answer.html" id="answer_link">
+        Get the answer!
+    </a>
+</div>
+<script>
+    var d1 = document.getElementById("div1");
+    var answer_link = document.getElementById("answer_link");
+    answer_link.onclick = function () {
+        d1.innerHTML = "That is easy,the answer is 4";
+        return false;
+    };
+</script>
+</body>
+</html>

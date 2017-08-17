@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全球购导航</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            text-align: center;
+            list-style-type: none;
+            margin: 0 auto;
+            margin-top:100px;
+            width: 800px;
+            height: 50px;
+
+        }
+        li{
+            width: 100px;
+            height: 50px;
+            background-color: #666666;
+            float: left;
+            line-height: 50px;
+        }
+        li:hover{
+            font-size: large;
+        }
+        ul li:nth-of-type(4){
+            background-color: #9dcb31;
+            position: relative;
+        }
+        ul li{
+            position: relative;
+        }
+        ul li img{
+            position: absolute;
+            top: -5px;
+            left: 40px;
+        }
+        /*
+            水平居中
+        */
+        .cen{
+            width: 300px;
+            height: 50px;
+            background-color: #ff0000;
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>服装城</li>
+    <li>美妆馆</li>
+    <li>京东超市</li>
+    <li>全球购
+        <img src="hot.png" alt="">
+    </li>
+    <li>闪购
+        <img src="hot.png" alt="">
+    </li>
+    <li>团购</li>
+    <li>拍卖</li>
+    <li>金融</li>
+</ul>
+
+<div class="cen">水平居中</div>
+</body>
+</html>

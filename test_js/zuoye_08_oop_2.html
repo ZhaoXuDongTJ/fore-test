@@ -10,10 +10,43 @@
         Persona.prototype.name = "ok";
         var pe1 = new Persona();
         pe1.name = "ll";
-        alert(pe1.name );
+        document.write(pe1.hasOwnProperty('name')+"<br>");
+        document.write(pe1.name+"<br>");
         delete pe1.name;
-        alert(pe1.name);
+        document.write(pe1.name+"<br>");
+        //判断属性是否为对象本身的；
+        document.write(pe1.hasOwnProperty('name') +"<br>");
+//       得到原型
+        Object.getPrototypeOf(pe1);
+
+        // in 操作符用来 判断 是否是对象或者原型的属性
+        var pe2 = new Persona();
+        document.write( 'name' in pe2);
         
+        //判断是否存在 原型里面
+        function hasProtitypeProperty(obj,name) {
+            return  !obj.hasOwnProperty(name) && name in obj;
+        }
+        //true 是原型属性
+        // false
+
+        // 拿到所有属性
+        //Object.keys();
+        var pe3 = new Persona();
+        pe3.aa= 0;
+        var arr_pe3 = Object.keys(pe3);
+        alert(arr_pe3);
+        alert(Object.keys(Persona.prototype));
+
+        //列出所有的  可以枚举和不可以枚举的
+        alert(Object.getOwnPropertyNames(Persona.prototype));
+        alert(Object.getOwnPropertyNames(pe3));
+
+        function ok() {
+            this.i || (this.i = 0);
+        }
+
+
     </script>
 </head>
 <body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+         function addNum() {
+             //1.获取当前的数量
+             var num = document.getElementById("num").value;
+             //2.数量的加一
+             num++;
+             //数据更新
+             document.getElementById("num").value = num;
+             document.getElementById("allPrice").value = 100*num;
+         }
+         function j_Num() {
+             //1.获取当前的数量
+             var num = document.getElementById("num").value;
+             //2.数量的加一
+             num--;
+             //数据更新
+             document.getElementById("num").value = num;
+             document.getElementById("allPrice").value = 100*num;
+         }
+    </script>
+</head>
+<body>
+单价：￥100<br />   <input type="button" value="-" onclick="j_Num()">
+<input type="text" id="num" value="1" />
+<input type="button" value="+" onclick="addNum()"><br />
+
+总价：<input type="text" id="allPrice" value="100">
+
+
+</body>
+</html>

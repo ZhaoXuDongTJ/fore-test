@@ -1,0 +1,72 @@
+#main_body{
+    height: 460px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    position: relative;
+}
+
+
+#carousel_ul li{
+
+    list-style: none;
+}
+#carousel_ul li a{
+    text-decoration: none;
+}
+
+.img_carousel .nav{
+    width: 234px;
+    height: 460px;
+    background-color: rgba(0,0,0,0.4);
+}
+.img_carousel .nav ul li {
+    width: 234px;
+    height: 40px;
+}
+.img_carousel{
+    background: url("../images/xmad_1/xmad_150287252577_ZLGtm.jpg");
+}
+.img_tools1,.img_tools2{
+    width: 41px;
+    height: 69px;
+    line-height: 69px;
+    font-size: 50px;
+    font-weight: bold;
+    border: 1px solid #000;
+    position: absolute;
+}
+.img_tools1:hover,.img_tools2:hover{
+    background-color:rgba(0,0,0,0.4) ;
+}
+
+.img_tools1{
+    left: 234px;
+    top: 50%;
+}
+.img_tools2{
+    right: 0;
+    top:50%;
+
+}
+.out_circle {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+}
+.out_circle .in_circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    float: left;
+    margin-right: 15px;
+    background-color: #3c3c3c;
+}
+.in_circle:hover{
+    background-color: white;
+}
+
+
+
